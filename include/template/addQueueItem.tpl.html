@@ -1,0 +1,53 @@
+<h2>File d'attente: {queueNameDisplay}</h2>
+<table>
+  <tr>
+    <td colspan="2">
+      <form action="?" method="post" id="addQueueItem" name="addQueueItem">
+        <input type="submit" name="addQueueItem" value="Prenez votre ticket!" class="pushButton"></input>
+      </form>
+      <br />
+    </td>
+  </tr>
+<!--
+  <tr>
+    <th>
+      <label>Optionnal comment:</label>
+    </th>
+    <td>
+      <input type="text" name="comment" size="32"></input>
+    </td>
+  </tr>
+-->
+</table>
+<!-- BEGIN queueInfo -->
+<div id="queueInfo">
+  <h2>Vous êtes dans la file d'attente:</h2>
+  <table>
+    <tr>
+      <th>Position</th><th>Date du ticket</th><th>&nbsp</th>
+    </tr>
+    <!-- BEGIN queueInfoItem -->
+    <tr>
+      <td align="right">{ticketPosition}.</td><td>{ticketDate}</td>
+      <td>
+        <form action="" method="post" id="delQueueItemForm" name="delQueueItemForm">
+          <input type="image" src="images/greencheck.gif" border="0" title="Question répondue, supprimer ce ticket." name="delQueueItemButton" value="Answered"></input>
+          <input type="hidden" name="queueItemId" value="{queueItemId}"></input>
+          <input type="hidden" name="delQueueItem" value="delQueueItem"></input>
+        </form>
+      </td>
+    </tr>
+    <!-- END queueInfoItem -->
+  </table>
+</div>
+<!-- END queueInfo -->
+<div class="tip">
+  <p>
+    Cliquez sur 'Prendre un ticket!' pour prendre votre place dans la file d'attente.
+    Il est possible de supprimer vos tickets ouverts en cliquant sur le <img src="images/greencheck.gif" alt="'vu'" height="10" /> correspondant.
+  </p>
+  <p>
+    <b>ATTENTION:</b> Si vous fermez l'explorateur, vous n'aurez plus accès à vos tickets précédents.
+  </p>
+</div>
+

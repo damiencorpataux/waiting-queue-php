@@ -1,0 +1,54 @@
+#header
+{
+  background-color: green;
+  color: white;
+}
+#header h1
+{
+margin: 0px;
+font-size: large;
+font-weight: bold;
+}
+#header b
+{
+margin-left: 5px;
+}
+
+#menu
+{
+  border-bottom: 1px dashed green;
+}
+
+#global
+{
+  width: 100%;
+  background-color: #CFFFCF;
+}
+
+#leftContent
+{
+  background-color: silver;
+}
+#message
+{
+  color: green;
+}
+#errorMessage
+{
+  color: red;
+}
+
+#content
+{
+  background-color: #CFFFCF;
+}
+
+#footer
+{
+  background-color: green;
+  color: white;
+  font-size: 8px;
+  clear: both;
+  position: fixed;
+  bottom: 1px;
+}

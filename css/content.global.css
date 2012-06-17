@@ -1,0 +1,9 @@
+.tip
+{
+  margin-top: 10px;
+  border-top: 1px solid gray;
+  background-image: url(../images/tip.gif);
+  background-repeat: no-repeat;
+  background-position: 0px 6px;
+  width: 50em;
+}

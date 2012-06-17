@@ -1,0 +1,38 @@
+<form action="?" method="post" id="queueLogin" name="queueLogin">
+  <table>
+    <tr>
+      <th>
+        <label>Queue name:</label>
+      </th>
+      <td>
+        <select name="queueName">
+          <!-- BEGIN queueNameOption -->
+          <option value="{queueName}">{queueNameDisplay}</option>
+          <!-- END queueNameOption -->
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label>Your name:</label>
+      </th>
+      <td>
+        <input type="text" name="studentName" size="32"></input>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label>Queue password:</label>
+      </th>
+      <td>
+        <input type="password" name="password" size="40"></input>
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2">
+        <a href="?login">User login</a>
+        <input type="submit" name="queueLogin" value="Subscribe"></input>
+      </th>
+    </tr>
+  </table>
+</form>

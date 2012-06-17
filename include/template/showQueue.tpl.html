@@ -1,0 +1,19 @@
+<h2>File d'attente: {queueNameDisplay}</h2>
+<ol>
+<!-- BEGIN listItem -->
+  <li>
+    {studentNameDisplay}
+    <form action="" method="post" id="delQueueItemForm" name="delQueueItemForm">
+      <input type="image" src="images/greencheck.gif" title="Question répondue, supprimer ce ticket." name="delQueueItemButton" value="Answered"></input>
+      <input type="hidden" name="queueItemId" value="{queueItemId}"></input>
+      <input type="hidden" name="delQueueItem" value="delQueueItem"></input>
+    </form>
+  </li>
+<!-- END listItem -->
+</ol>
+<div class="tip">
+  <p>
+    Cliquez sur <img src="images/greencheck.gif" alt="l'icone 'vu'" height="10" /> pour supprimer le ticket correspondant de la file d'attente.
+  </p>
+</div>
+

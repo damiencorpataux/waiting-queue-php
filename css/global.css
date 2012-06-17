@@ -1,0 +1,58 @@
+body
+{
+background-color: EEFFEE;
+}
+table
+{
+border: 0px;
+padding: 0px;
+}
+body, table
+{
+font-family: verdana, helvetica, geneva, sans-serif;
+font-size: x-small;
+}
+
+th
+{
+text-align: right;
+}
+
+div
+{
+padding: 5px;
+}
+
+p
+{
+margin: 0px;
+margin-bottom: 3px;
+}
+
+a
+{
+color: green;
+}
+
+input
+{
+border: 1px solid gray;
+font-size: xx-small;
+}
+
+ul li,
+ol li
+{
+padding-bottom: 10px;
+}
+
+ul form,
+ol form
+{
+display: inline;
+}
+ul form input,
+ol form input
+{
+border: none;
+}

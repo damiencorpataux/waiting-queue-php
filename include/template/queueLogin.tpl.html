@@ -1,0 +1,47 @@
+<form action="?" method="post" id="queueLogin" name="queueLogin">
+  <table>
+    <tr>
+      <th>
+        <label>File d'attente:</label>
+      </th>
+      <td>
+        <select name="queueName">
+          <!-- BEGIN queueNameOption -->
+          <option value="{queueName}">{queueNameDisplay}</option>
+          <!-- END queueNameOption -->
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label>Mot de passe:</label>
+      </th>
+      <td>
+        <input type="password" name="password" size="40"></input>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label>Votre nom:</label>
+      </th>
+      <td>
+        <input type="text" name="studentName" size="32"></input>
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2">
+        <a href="?login">User login</a>
+        <input type="submit" name="queueLogin" value="Subscribe"></input>
+      </th>
+    </tr>
+  </table>
+</form>
+<div class="tip">
+  <p>
+    Choisissez la file d'attente, entrez son mot de passe et votre nom.
+  </p>
+  <p>
+    Votre nom apparaît dans la file d'attente lorsque vous prenez un ticket.
+  </p>
+</div>
+

@@ -1,0 +1,14 @@
+<h2>Queue name: {queueNameDisplay}</h2>
+<ul>
+<!-- BEGIN listItem -->
+  <li>
+    {studentNameDisplay}
+    <form action="" method="post" id="delQueueItemForm" name="delQueueItemForm">
+      <input type="image" src="images/greencheck.gif" title="Student has been answered, clear this entry." name="delQueueItemButton" value="Answered"></input>
+      <input type="hidden" name="queueItemId" value="{queueItemId}"></input>
+      <input type="hidden" name="delQueueItem" value="delQueueItem"></input>
+    </form>
+  </li>
+<!-- END listItem -->
+</ul>
+

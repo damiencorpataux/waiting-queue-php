@@ -1,0 +1,48 @@
+<div id="header">
+  <h1>{WelcomeTitle}</h1>
+  <b>{WelcomeMessage}</b>
+</div>
+<!-- BEGIN teacherMenu -->
+<div id="menu">
+  <b>Menu enseignant: </b>
+  <a href="?addQueue">
+    Créer une file</a>
+  |
+  <a href="?listQueues">
+    Afficher une file</a>
+  |
+  <a href="">
+    Recharger</a>
+  |
+  <a href="?logout">
+    Logout</a>
+</div>
+<!-- END teacherMenu -->
+<!-- BEGIN studentMenu -->
+<div id="menu">
+  <b>Menu étudiant: </b>
+  <a href="?logout">
+    Logout</a>
+</div>
+<!-- END studentMenu -->
+<div id="content">
+  {CONTENT}
+</div>
+<div id="leftContent">
+  <!-- BEGIN messageBlock -->
+  <div id="message">
+    {message}
+  </div>
+  <!-- END messageBlock -->
+  <!-- BEGIN errorMessageBlock -->
+  <div id="errorMessage">
+    <b>Erreur:</b>
+    {errorMessageDisplay}
+  </div>
+  <!-- END errorMessageBlock -->
+</div>
+
+<div id="footer">
+  WaitingQueue - the easiest queue management system - copyleft 2005 Damien Corpataux
+</div>
+
